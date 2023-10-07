@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".FilterFragment"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Spinner
+            android:id="@+id/genderFragment"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_below="@+id/clrPref"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="5dp"
+            android:backgroundTint="@color/black"
+            android:entries="@array/genders"
+            android:theme="@style/Spinner" />
+
+        <Spinner
+            android:id="@+id/colorFragment"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_below="@+id/categoryFragment"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="5dp"
+            android:backgroundTint="@color/black"
+            android:theme="@style/Spinner"
+            android:entries="@array/colors" />
+
+        <Spinner
+            android:id="@+id/categoryFragment"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_below="@+id/genderFragment"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="5dp"
+            android:backgroundTint="@color/black"
+            android:entries="@array/categories"
+            android:theme="@style/Spinner" />
+
+        <com.google.android.material.slider.RangeSlider
+            android:id="@+id/seekBarPrice"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/colorFragment"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:valueFrom="0.0"
+            android:valueTo="500"
+            app:values="@array/initial_slider_values_price" />
+
+        <com.google.android.material.slider.RangeSlider
+            android:id="@+id/seekBarSize"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/seekBarPrice"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:valueFrom="0.0"
+            android:valueTo="50"
+            app:values="@array/initial_slider_values_size" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/colorFragment"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            android:text="Price"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/seekBarPrice"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            android:text="Size"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/brandFilter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/seekBarSize"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:hint="Choose brand..."
+            android:inputType="textPersonName"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black" />
+
+        <Button
+            android:id="@+id/filterNow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/brandFilter"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="Filter now" />
+
+        <Button
+            android:id="@+id/clrPref"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            android:text="Clear preferences" />
+
+    </RelativeLayout>
+
+</ScrollView>

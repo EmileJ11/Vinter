@@ -1,0 +1,52 @@
+<resources>
+    <string name="app_name">Vinter</string>
+
+    <string-array name="genders">
+        <item>Choose gender</item>
+        <item>Male</item>
+        <item>Female</item>
+        <item>Unisex</item>
+    </string-array>
+
+    <string-array name="categories">
+        <item>Choose category</item>
+        <item>Sneakers</item>
+        <item>Boots</item>
+        <item>Flip Flops</item>
+        <item>Crocs</item>
+        <item>Sandals</item>
+        <item>Snow Boots</item>
+        <item>Moccasins</item>
+        <item>Other</item>
+    </string-array>
+
+    <string-array name="colors">
+        <item>Choose color</item>
+        <item>Multi-color</item>
+        <item>Yellow</item>
+        <item>Orange</item>
+        <item>Red</item>
+        <item>Pink</item>
+        <item>Purple</item>
+        <item>Blue</item>
+        <item>Green</item>
+        <item>White</item>
+        <item>Grey</item>
+        <item>Black</item>
+        <item>Cream</item>
+        <item>Brown</item>
+    </string-array>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <array name="initial_slider_values_price">
+        <item>0</item>
+        <item>500</item>
+    </array>
+
+    <array name="initial_slider_values_size">
+        <item>0</item>
+        <item>50</item>
+    </array>
+
+</resources>
